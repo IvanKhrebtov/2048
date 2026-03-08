@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-page">
+      <header class="top-panel">
+        <div>
+          <h1>2048</h1>
+          <p class="subtitle">Объединяй плитки и доберись до 2048!</p>
+        </div>
+        <div class="score-boxes">
+          <div class="score-box">
+            <span>Счёт</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="score-box">
+            <span>Рекорд</span>
+            <strong id="best-score">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="controls">
+        <button id="new-game-btn" type="button">Новая игра</button>
+        <p>Управление: стрелки, WASD или свайпы на мобильном.</p>
+      </section>
+
+      <section class="board-wrapper">
+        <div id="board" class="board" aria-label="Игровое поле 4 на 4"></div>
+        <div id="overlay" class="overlay hidden" aria-live="polite">
+          <p id="overlay-text"></p>
+          <button id="overlay-btn" type="button">Играть снова</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
